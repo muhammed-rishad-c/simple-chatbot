@@ -4,6 +4,7 @@ import json
 import pickle
 import random
 import warnings
+import train_model
 
 warnings.filterwarnings('ignore')
 
@@ -16,7 +17,7 @@ vectorizer=data['vectorizer']
 model=data['model']
 
 def predict_intense(sentence):
-    p=vectorizer.transform(sentence)
+    p=vectorizer.transform([sentence])
     predicted=model.predict(p)[0]
     return predicted
 

@@ -2,18 +2,58 @@
   "intents": [
     {
       "tag": "greetings",
-      "patterns": ["hi", "hello", "hey"],
-      "responses": ["Hi there!", "Hello!", "Hey, how can I help you?"]
+      "patterns": ["hi", "hello", "hey", "what's up", "hey there", "hola", "sup"],
+      "responses": ["Hi there!", "Hello!", "Hey, how can I help you?", "Hi, glad to see you!"]
     },
     {
       "tag": "goodbye",
-      "patterns": ["bye", "see you later", "goodbye"],
-      "responses": ["See you later!", "Goodbye!", "Have a great day!"]
+      "patterns": ["bye", "see you later", "goodbye", "farewell", "catch you later", "peace out"],
+      "responses": ["See you later!", "Goodbye!", "Have a great day!", "Bye! Come back soon."]
     },
     {
       "tag": "name",
-      "patterns": ["what is your name", "who are you"],
-      "responses": ["I am a simple chatbot.", "You can call me Bot."]
+      "patterns": ["what is your name", "who are you", "what's your name", "what are you called", "can I have your name"],
+      "responses": ["You can call me Bot.", "I'm a simple chatbot.", "I don't have a name, I'm just a program.", "My creators call me AI assistant."]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["thank you", "thanks", "i appreciate it", "that's helpful", "thanks a lot"],
+      "responses": ["You're welcome!", "Happy to help!", "No problem!", "Glad I could help."]
+    },
+    {
+      "tag": "help",
+      "patterns": ["how can you help me", "what can you do", "can you help me", "what are your features"],
+      "responses": ["I can answer basic questions about myself and provide simple information.", "I am a simple chatbot designed to respond to common questions.", "I can respond to a variety of phrases like greetings and goodbyes."]
+    },
+    {
+      "tag": "age",
+      "patterns": ["how old are you", "what is your age", "when were you created"],
+      "responses": ["I don't have an age, I'm a program.", "I was created in a lab, so I don't have a birthday!", "Time is an abstract concept for me."]
+    },
+    {
+      "tag": "creator",
+      "patterns": ["who made you", "who is your creator", "who created you"],
+      "responses": ["I was created by a developer using Python.", "A programmer crafted my existence.", "My source code is my lineage."]
+    },
+    {
+      "tag": "identity",
+      "patterns": ["are you human", "are you a robot", "are you a bot"],
+      "responses": ["I am a chatbot.", "I'm a program designed to chat with you!", "I am an AI, not a human."]
+    },
+    {
+      "tag": "jokes",
+      "patterns": ["tell me a joke", "make me laugh", "got any jokes"],
+      "responses": ["Why don't scientists trust atoms? Because they make up everything!", "What do you call a fake noodle? An impasta!", "I'm afraid I can't tell you a joke... My humor is a bit dry." ]
+    },
+    {
+      "tag": "weather",
+      "patterns": ["what's the weather like", "weather today", "is it raining"],
+      "responses": ["I cannot check the weather for you.", "My capabilities do not include weather reports.", "I'm a simple chatbot, I don't have real-time data."]
+    },
+    {
+      "tag": "default",
+      "patterns": ["", "asdfghjkl"],
+      "responses": ["I'm sorry, I don't understand that.", "Can you please rephrase that?", "I'm not sure how to respond to that."]
     }
   ]
 }
