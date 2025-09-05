@@ -60,6 +60,6 @@ model.fit(x_train,y_train)
 
 
 
-pickle.dump({'vectorizer':vectorizer,'model':model,'words':words,'classes':classes},open('chatbot.pkl','wb'))
+pickle.dump({'vectorizer':vectorizer,'model':model},open('chatbot.pkl','wb'))
 
 print("training completed and model saved as chatbot.pkl file ")
